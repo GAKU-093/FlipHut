@@ -56,7 +56,7 @@ function headerHTML() {
   var acct = S.session
     ? '<span class="who">' + esc(S.name || 'Conectado') + '</span><button type="button" class="btn ghost sm" data-act="logout">Sair</button>'
     : '<button type="button" class="btn ghost" data-act="login">Entrar</button>';
-  return '<header class="top"><a class="brand" href="#/" aria-label="FliPHut, início"><img class="logo" src="logo.png" alt="FliPHut"></a>' +
+  return '<header class="top"><a class="brand" href="#/" aria-label="FliPHut, início"><img class="logo" src="images/logo.png" alt="FliPHut"></a>' +
     '<nav class="nav">' + acct + '<button type="button" class="btn ghost" data-act="explore">Explorar</button><a class="btn" href="#/criar">Criar</a></nav></header>';
 }
 function renderHeader() { setHTML('hdr', headerHTML()); }
